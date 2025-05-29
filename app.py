@@ -30,7 +30,7 @@ def extract_text_from_pdf(pdf_file):
     return text
 
 # Function to call Groq API
-def call_groq_api(prompt, model="llama3-8b-8192"):
+def call_groq_api(prompt, model="llama3-70b-8192"):
     # Use the API key from session state instead of hardcoded value
     client = Groq(api_key=st.session_state.groq_api_key)
     
